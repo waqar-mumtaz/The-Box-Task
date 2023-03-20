@@ -10,7 +10,7 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="flex justify-between py-4">
+    <nav class="flex justify-between items-center py-4">
       <img class="ml-12" src="../img/logo.svg" alt="Box logo" />
       <ul class="flex mr-20 gap-12 font-sans text-center">
         <li class="cursor-pointer">Home</li>
@@ -20,21 +20,19 @@
         <li class="text-orange-500 cursor-pointer">Contact Us</li>
       </ul>
     </nav>
-    <section>
-      <div
-        class="bg-cover relative"
-        style="background-image: url(../img/main\ banner.avif)"
-      >
-        <p class="font-bold text-5xl text-gray-800 pt-64 pb-44 pl-40">
-          Building things <br />
-          is our mission.
+    <section
+      class="bg-cover relative bg-bottom bg-no-repeat h-[646px]"
+      style="background-image: url(../img/bg-image.png)"
+    >
+      <p class="font-bold text-5xl text-gray-800 pt-64 pb-44 pl-40">
+        Building things <br />
+        is our mission.
+      </p>
+      <div class="bg-blue-800 text-white px-8 w-80 absolute bottom-0 right-0">
+        <h4 class="pt-2 pb-3 font-bold text-xl">Feature Projects</h4>
+        <p class="w-72 pb-8 text-2xl">
+          The National University of Architecture
         </p>
-        <div class="bg-blue-800 flex flex-col text-white px-8">
-          <h4 class="pt-2 pb-3 font-bold text-xl">Feature Projects</h4>
-          <p class="w-72 pb-8 text-2xl">
-            The National University of Architecture
-          </p>
-        </div>
       </div>
     </section>
 
@@ -70,21 +68,12 @@
       </div>
     </div>
     <!-- Landing Page -->
-    <div class="relative text-sm font-medium leading-6">
-      <div
-        class="bg-sky-400/20 border border-sky-700/10 rounded-lg p-4 dark:bg-blue-900/70 dark:border-0"
-      >
-        <div
-          class="absolute bottom-0 left-0 bg-sky-500 shadow-lg rounded-lg p-4 text-white dark:bg-blue-500"
-        >
-          <p>Absolute child</p>
-        </div>
-      </div>
-      <!-- <div class="absolute left-20">
+    <section class="relative">
+      <div class="absolute left-20">
         <img class="w-[800px]" src="../img/landing pag img.png" alt="" />
-      </div> -->
-      <!-- <div
-        class="bg-blue-800 w-[450px] h-[490px] text-white absolute z-10 top-1/4 left-1/2 translate-y-3 origin-center"
+      </div>
+      <div
+        class="bg-blue-800 w-[450px] h-[490px] text-white absolute z-10 top-10 left-1/2 -translate-x-20 origin-center"
       >
         <div class="ml-10">
           <h1 class="font-bold my-8 text-2xl">About us</h1>
@@ -103,40 +92,8 @@
           <button class="bg-white text-blue-800 py-2 px-2 rounded-sm mt-20">
             More on Our History
           </button>
-        </div> -->
-      <!-- </div> -->
-    </div>
-    <div class="relative text-sm font-medium leading-6">
-      <div
-        class="bg-sky-400/20 border border-sky-700/10 rounded-lg p-4 dark:bg-blue-900/70 dark:border-0"
-      >
-        <div
-          class="relative bg-sky-400/20 border border-sky-700/10 p-4 h-32 dark:bg-blue-400/20 dark:border-0"
-        >
-          <p class="text-sky-700 dark:text-white">Relative parent</p>
-          <div
-            class="absolute bottom-0 left-0 bg-sky-500 shadow-lg rounded-lg p-4 text-white dark:bg-blue-500"
-          >
-            <p>Absolute child</p>
-          </div>
         </div>
       </div>
-    </div>
-    <div class="relative text-sm font-medium leading-6">
-      <div
-        class="bg-sky-400/20 border border-sky-700/10 rounded-lg p-4 dark:bg-blue-900/70 dark:border-0"
-      >
-        <div
-          class="relative bg-sky-400/20 border border-sky-700/10 p-4 h-32 dark:bg-blue-400/20 dark:border-0"
-        >
-          <p class="text-sky-700 dark:text-white">Relative parent</p>
-          <div
-            class="absolute bottom-0 left-0 bg-sky-500 shadow-lg rounded-lg p-4 text-white dark:bg-blue-500"
-          >
-            <p>Absolute child</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   </body>
 </html>
