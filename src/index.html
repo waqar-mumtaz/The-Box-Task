@@ -7,18 +7,32 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="../img/icon.svg" />
+
+    <title>The-Box</title>
   </head>
   <body>
     <header class="bg-white">
       <nav class="flex justify-between items-center py-4">
         <img class="ml-12" src="../img/logo.svg" alt="Box logo" />
         <ul class="flex mr-20 gap-12 font-sans text-center">
-          <li class="cursor-pointer">Home</li>
-          <li class="cursor-pointer">About Us</li>
-          <li class="cursor-pointer">Projects</li>
-          <li class="cursor-pointer">Services</li>
-          <li class="text-orange-500 cursor-pointer">Contact Us</li>
+          <li class="cursor-pointer hover:text-blue-900">Home</li>
+          <li class="cursor-pointer hover:text-blue-900">About Us</li>
+          <li class="cursor-pointer hover:text-blue-900">Projects</li>
+          <li class="cursor-pointer hover:text-blue-900">Services</li>
+          <li
+            class="text-orange-500 cursor-pointer hover:text-orange-600 active:text-orange-700"
+          >
+            Contact Us
+          </li>
         </ul>
       </nav>
     </header>
@@ -31,11 +45,21 @@
           Building things <br />
           is our mission.
         </p>
-        <div class="bg-blue-800 text-white px-8 w-80 absolute bottom-0 right-0">
-          <h4 class="pt-2 pb-3 font-bold text-xl">Feature Projects</h4>
-          <p class="w-72 pb-8 text-2xl">
-            The National University of Architecture
-          </p>
+        <div class="bg-blue-800 text-white absolute bottom-0 right-0">
+          <div class="px-10 py-2">
+            <h4 class="pt-2 pb-3 font-bold text-xl flex justify-center">
+              Feature Projects
+            </h4>
+            <div class="flex flex-col items-center pb-8 text-2xl">
+              <p>The National University of</p>
+              <p>Architecture</p>
+            </div>
+          </div>
+
+          <div class="flex bg-white gap-0.5">
+            <button class="bg-black py-3 flex-1">Back</button>
+            <button class="bg-black py-3 flex-1">Back</button>
+          </div>
         </div>
       </section>
 
@@ -106,8 +130,317 @@
           </div>
         </div>
       </section>
-      <p class="mt-5">We’ve matured into an industry leader</p>
+      <!-- sevices area -->
+      <section>
+        <div class="bg-gray-100 mt-32">
+          <div class="flex justify-center py-11">
+            <h2 class="text-3xl font-bold">Services</h2>
+          </div>
+          <div class="flex gap-28 justify-center">
+            <div
+              class="bg-white w-52 h-32 flex flex-col justify-center items-center rounded-md"
+            >
+              <img
+                class="pb-3 border-b-2 border-gray-200 w-10 pt-2"
+                src="../img/Service icons/Construction icon.svg"
+                alt=""
+              />
+              <div class="pt-2 text-blue-800 font-bold">
+                <h6 class="work-sans">Construction</h6>
+              </div>
+            </div>
+            <div
+              class="bg-blue-800 w-52 h-32 flex flex-col justify-center items-center rounded-md"
+            >
+              <img
+                class="pb-3 border-b-2 border-gray-200 w-10 pt-2"
+                src="../img/Service icons/Renovation icon.svg"
+                alt=""
+              />
+              <div class="pt-2 text-white font-bold">
+                <h6 class="work-sans">Renovation</h6>
+              </div>
+            </div>
+            <div
+              class="bg-white w-52 h-32 flex flex-col justify-center items-center rounded-md"
+            >
+              <img
+                class="pb-3 border-b-2 border-gray-200 w-10 pt-2"
+                src="../img/Service icons/Consultation icon.svg"
+                alt=""
+              />
+              <div class="pt-2 text-blue-800 font-bold">
+                <h6 class="work-sans">Consultation</h6>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-28 justify-center py-11 pb-12">
+            <div
+              class="bg-blue-800 w-52 h-32 flex flex-col justify-center items-center rounded-md"
+            >
+              <img
+                class="pb-3 border-b-2 border-gray-200 w-10 pt-2"
+                src="../img/Service icons/Repair Services icon.svg"
+                alt=""
+              />
+              <div class="pt-2 text-white font-bold">
+                <h6 class="work-sans">Repair Services</h6>
+              </div>
+            </div>
+            <div
+              class="bg-white w-52 h-32 flex flex-col justify-center items-center rounded-md"
+            >
+              <img
+                class="pb-3 border-b-2 border-gray-200 w-10 pt-2"
+                src="../img/Service icons/Architecture icon.svg"
+                alt=""
+              />
+              <div class="pt-2 text-blue-800 font-bold">
+                <h6 class="work-sans">Architecture</h6>
+              </div>
+            </div>
+            <div
+              class="bg-blue-800 w-52 h-32 flex flex-col justify-center items-center rounded-md"
+            >
+              <img
+                class="pb-3 border-b-2 border-gray-200 w-10 pt-2"
+                src="../img/Service icons/Electric icon.svg"
+                alt=""
+              />
+              <div class="pt-2 text-white font-bold">
+                <h6 class="work-sans">Electric</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Stats Area -->
+      <section class="flex gap-36 items-baseline">
+        <div class="mt-36">
+          <div class="relative ml-[375px] z-10">
+            <div class="bg-white w-48 drop-shadow-lg">
+              <div class="pl-3 py-4">
+                <h1 class="text-5xl font-bold">84</h1>
+                <p class="ml-3 border-l-4 border-orange-600 pl-2 mt-2">
+                  Happy Clients
+                </p>
+              </div>
+            </div>
+            <div class="absolute bottom-14 left-36">
+              <img src="../img/Stats icon/Client icon.svg" alt="" />
+            </div>
+          </div>
+          <div class="relative ml-44 -mt-10">
+            <div class="bg-white w-56 drop-shadow-lg">
+              <div class="pl-3 py-4">
+                <h1 class="text-5xl font-bold">123</h1>
+                <p class="ml-3 border-l-4 border-orange-600 pl-2 mt-2">
+                  Projects Completed
+                </p>
+              </div>
+            </div>
+            <div class="absolute bottom-20 -left-8">
+              <img src="../img/Stats icon/project icon.svg" alt="" />
+            </div>
+          </div>
+          <div class="relative ml-80 z-10 -mt-3">
+            <div class="bg-white w-48 drop-shadow-lg">
+              <div class="pl-3 py-4">
+                <h1 class="text-5xl font-bold">30</h1>
+                <p class="ml-3 border-l-4 border-orange-600 pl-2 mt-2">
+                  Years in Business
+                </p>
+              </div>
+            </div>
+            <div class="absolute bottom-14 left-36">
+              <img src="../img/Stats icon/award icon.svg" alt="" />
+            </div>
+          </div>
+          <div class="relative ml-52 -mt-12">
+            <div class="bg-white w-56 drop-shadow-lg">
+              <div class="pl-3 py-4">
+                <h1 class="text-5xl font-bold">30</h1>
+                <p class="ml-3 border-l-4 border-orange-600 pl-2 mt-2">
+                  Years in Business
+                </p>
+              </div>
+            </div>
+            <div class="absolute top-20 left-48">
+              <img src="../img/Stats icon/Business icon.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="text-5xl font-bold leading-tight text-blue-800">
+            <h1>
+              30 Years <br />
+              Experience
+            </h1>
+          </div>
+          <div class="text-gray-600 py-10">
+            <p>
+              Our company has been the <br />
+              leading provided construction <br />
+              services to clients throughout <br />
+              the USA since 1988.
+            </p>
+          </div>
+
+          <a
+            href="./Contact-us.html"
+            class="font-bold bg-blue-800 text-white py-2 px-10 rounded-sm hover:bg-blue-900 active:bg-blue-800"
+          >
+            Contac Us</a
+          >
+        </div>
+      </section>
+      <!-- Ads area -->
+      <section>
+        <div class="mt-20">
+          <div
+            class="bg-cover"
+            style="background-image: url(../img/ads\ img.svg)"
+          >
+            <div class="flex items-center justify-between">
+              <div class="p-16">
+                <h1 class="font-bold text-white text-3xl">
+                  Free consultation with exceptional quality
+                </h1>
+                <p class="text-white pt-5">
+                  Just one call away:
+                  <span class="text-white underline"> +84 1102 2703</span>
+                </p>
+              </div>
+              <div class="text-white mr-24">
+                <button
+                  class="border py-2 px-3 font-semibold hover:border-2 hover:font-bold"
+                >
+                  Get your consultation
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Project area -->
+      <section>
+        <div class="flex mt-24">
+          <div class="ml-20 mt-20">
+            <div class="text-gray-900 font-bold text-3xl mb-5">
+              <h1>Projects</h1>
+            </div>
+            <ul class="text-gray-500 font-semibold flex flex-col gap-2">
+              <li class="hover:text-blue-800 hover:underline cursor-pointer">
+                All
+              </li>
+              <li class="hover:text-blue-800 hover:underline cursor-pointer">
+                Commercial
+              </li>
+              <li class="hover:text-blue-800 hover:underline cursor-pointer">
+                Residential
+              </li>
+              <li class="hover:text-blue-800 hover:underline cursor-pointer">
+                Other
+              </li>
+            </ul>
+          </div>
+          <div class="flex gap-6 ml-44 mt-40">
+            <div class="flex flex-col gap-6">
+              <div>
+                <img src="../img/Project img/Hotel img.svg" alt="" />
+                <div class="bg-blue-800 text-white inline-block w-[282px] py-1">
+                  <div class="ml-2">
+                    <h2 class="font-semibold">Wildstone Infra Hotel</h2>
+                    <p class="text-sm">2715 Ash Dr. San Jose, South Dakota</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img src="../img/Project img/House img.svg" alt="" />
+                <div class="bg-blue-800 text-white inline-block w-[282px] py-1">
+                  <div class="ml-2">
+                    <h2 class="font-semibold">Mr. Parkinston’s House</h2>
+                    <p class="text-sm">3517 W. Gray St. Utica, Pennsylvania</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <div>
+                <img src="../img/Project img/Building img.svg" alt="" />
+                <div class="bg-blue-800 text-white inline-block w-[282px] py-1">
+                  <div class="ml-2">
+                    <h2 class="font-semibold">Wish Stone Building</h2>
+                    <p class="text-sm">
+                      2972 Westheimer Rd. Santa Ana, Illinois
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img src="../img/Project img/Height img.svg" alt="" />
+                <div class="bg-blue-800 text-white inline-block w-[282px] py-1">
+                  <div class="ml-2">
+                    <h2 class="font-semibold">Oregano Height</h2>
+                    <p class="text-sm">2464 Royal Ln. Mesa, New Jersey</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="bg-slate-100 mt-24">
+      <div class="flex justify-between mx-20 py-11">
+        <div class="flex flex-col gap-4">
+          <div class="flex gap-2">
+            <h4 class="text-blue-700 font-semibold">Address:</h4>
+            <p>6391 Elgin St. Celina, Delaware 10299</p>
+          </div>
+          <div class="flex gap-4">
+            <h4 class="text-blue-700 font-semibold">Phone:</h4>
+            <p>+84 1102 2703</p>
+          </div>
+          <div class="flex gap-6">
+            <h4 class="text-blue-700 font-semibold">Email:</h4>
+            <p>hello@thebox.com</p>
+          </div>
+          <div>
+            <img src="../img/logo.svg" alt="" />
+          </div>
+        </div>
+        <div>
+          <div class="text-blue-700 font-semibold">
+            <h2>Newsletter:</h2>
+          </div>
+          <div class="py-3">
+            <input
+              class="pl-2 py-1 border border-gray-300 rounded-sm"
+              type="Your email here"
+              placeholder="Your email here"
+            />
+            <button
+              class="bg-orange-400 text-white py-1 px-6 rounded-sm hover:bg-orange-500 active:bg-orange-600"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div>
+            <div class="py-1">
+              <h1 class="text-blue-700 font-semibold">Social:</h1>
+            </div>
+            <div class="text-2xl flex gap-3">
+              <a href="#" class="fa fa-facebook text-blue-900"></a>
+              <a href="#" class="fa fa-linkedin text-blue-600"></a>
+              <a href="#" class="fa fa-twitter text-sky-500"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-blue-800 text-white py-4">
+        <p class="ml-24">TheBox Company © 2022. All Rights Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
